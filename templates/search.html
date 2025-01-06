@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Data</title>
+</head>
+<body>
+    <h1>Search Extracted Data</h1>
+    <form action="{{ url_for('search_record') }}" method="POST">
+        <label for="search_query">Enter keyword to search:</label><br><br>
+        <input type="text" name="search_query" id="search_query" placeholder="Enter name, email, etc." required><br><br>
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <a href="/">Go Back to Upload Page</a>
+</body>
+</html>
